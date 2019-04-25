@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    margin-top: 4rem;
+}
+.description{
+    text-align: center
+}
+.instructions{
+    text-align: center;
+}
+button{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.copyright{
+    float: right;
+    text-align: right;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-right: 4rem;
+}
+.lds-ripple {
+    display: inline-block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+  }
