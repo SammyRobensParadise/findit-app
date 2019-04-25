@@ -34,69 +34,71 @@
                 <p>Key Words, Seperate by <code>,</code></p>
 
                 <div class="input-group input-group-lg">
-                    <form action="welcome_get.php" method="get">
+                    <form action="search.php" method="get">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroup-sizing-lg">Text</span>
                         </div>
                         <input type="text" class="form-control" id="search-input" aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-lg" placeholder="key,words,like,this" name="key_words_input">
-                    
+                            aria-describedby="inputGroup-sizing-lg" placeholder="key,words,like,this"
+                            name="key_words_input">
+
                 </div>
                 <br>
                 <p>Or Search by Item ID. You can select multiple IDs by seperating them by <code>,</code></p>
                 <div class="input-group input-group-lg">
-                    
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-lg">ID</span>
-                        </div>
-                        <input type="integer" class="form-control" id="search-input-2" aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-lg" placeholder="Eg: 1234,4321" >
+
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">ID</span>
+                    </div>
+                    <input type="integer" class="form-control" id="search-input-2" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-lg" placeholder="Eg: 1234,4321">
                 </div>
 
             </div>
             <div class="col-sm">
-                
-                    <p>Type</p>
-                    <div class="form-row align-items-center">
-                        <div class="col-auto my-1">
-                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Type</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect1">
-                                <option id="default1">Do Not Check...</option>
-                                <option value="tools">Tools</option>
-                                <option value="electronics">Electronics</option>
-                                <option value="household_items">Household Items</option>
-                            </select>
-                        </div>
+
+                <p>Type</p>
+                <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Type</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect1">
+                            <option id="default1">Do Not Check...</option>
+                            <option value="tools">Tools</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="household_items">Household Items</option>
+                        </select>
                     </div>
-            </div>
-            <div class="col-sm">
-                    <p>Location</p>
-                    <div class="form-row align-items-center">
-                        <div class="col-auto my-1">
-                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Type</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect2">
-                                <option id="default2">Do Not Check...</option>
-                                <option value="living_room">Living Room</option>
-                                <option value="garage">Garage</option>
-                                <option value="basement">Basement</option>
-                                <option value="laundry_room">Laundry Room</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <button type="button" class="btn btn-outline-dark btn-lg btn-block" onclick="clearResults()">⚠️
-                        Clear
-                        Search</button>
-                    <button type="submit" class="btn btn-success btn-lg btn-block" >Find It</button>
                 </div>
             </div>
-        </div>
+            <div class="col-sm">
+                <p>Location</p>
+                <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Type</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect2">
+                            <option id="default2">Do Not Check...</option>
+                            <option value="living_room">Living Room</option>
+                            <option value="garage">Garage</option>
+                            <option value="basement">Basement</option>
+                            <option value="laundry_room">Laundry Room</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-outline-dark btn-lg btn-block"
+                                onclick="clearResults()">⚠️
+                                Clear
+                                Search</button>
+                            <button type="submit" class="btn btn-success btn-lg btn-block">Find It</button>
+                        </div>
+                    </div>
+                </div>
                 </form>
             </div>
         </div>
- 
+
         <div class="container">
 
         </div>
@@ -150,18 +152,21 @@
         <!--Footer-->
         <div class="container">
             <p id="copyright">Find It ©️ 2019 <code>Version 1.0.1</code></p>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="./main.js"></script>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous">
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous">
+            </script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous">
+            </script>
+            <script src="./main.js"></script>
 </body>
 
 </html>
