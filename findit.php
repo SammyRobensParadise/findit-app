@@ -56,34 +56,7 @@
 
             </div>
             <div class="col-sm">
-
-                <p>Type</p>
-                <div class="form-row align-items-center">
-                    <div class="col-auto my-1">
-                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Type</label>
-                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect1">
-                            <option id="default1">Do Not Check...</option>
-                            <option value="tools">Tools</option>
-                            <option value="electronics">Electronics</option>
-                            <option value="household_items">Household Items</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
             <div class="col-sm">
-                <p>Location</p>
-                <div class="form-row align-items-center">
-                    <div class="col-auto my-1">
-                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Type</label>
-                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect2">
-                            <option id="default2">Do Not Check...</option>
-                            <option value="living_room">Living Room</option>
-                            <option value="garage">Garage</option>
-                            <option value="basement">Basement</option>
-                            <option value="laundry_room">Laundry Room</option>
-                        </select>
-                    </div>
-                </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -107,6 +80,7 @@
             aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
+                <form>
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Create Entry</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -114,6 +88,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
+                    
                         <p>Create a Entry</p>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
@@ -127,7 +102,7 @@
                                 <span class="input-group-text" id="basic-addon2">Keywords</span>
                             </div>
                             <input type="text" class="form-control" placeholder="Key,words,like,this"
-                                aria-label="Username" aria-describedby="basic-addon1">
+                                aria-label="keywords" aria-describedby="basic-addon1" name="keywords_insert">
                         </div>
                         <div class="input-group">
                             <div class="input-group-prepend">
@@ -141,12 +116,13 @@
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-success">Save changes</button>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <p>Results:</p>
+        <div class="container align-items-center">
             <div class="jumbotron align-items-center" id="results-container">
+            <p class="align-items-center center">Coded with ❤️ by Sammy Robens-Paradise</p>
             </div>
         </div>
         <!--Footer-->
