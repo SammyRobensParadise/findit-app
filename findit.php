@@ -56,93 +56,102 @@
 
             </div>
             <div class="col-sm">
-            <div class="col-sm">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <button type="button" class="btn btn-outline-dark btn-lg btn-block"
-                                onclick="clearResults()">⚠️
-                                Clear
-                                Search</button>
-                            <button type="submit" class="btn btn-success btn-lg btn-block">Find It</button>
-                        </div>
-                    </div>
-                </div>
-                </form>
-            </div>
-        </div>
-
-        <div class="container">
-
-        </div>
-        <!--Modal-->
-        <div class="modal fade" id="data-entry" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                <form>
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Create Entry</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                    
-                        <p>Create a Entry</p>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">Title</span>
+                <div class="col-sm">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button type="button" class="btn btn-outline-dark btn-lg btn-block"
+                                    onclick="clearResults()">⚠️
+                                    Clear
+                                    Search</button>
+                                <button type="submit" class="btn btn-success btn-lg btn-block">Find It</button>
                             </div>
-                            <input type="text" class="form-control" placeholder="Example Name" aria-label="Username"
-                                aria-describedby="basic-addon1">
                         </div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon2">Keywords</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Key,words,like,this"
-                                aria-label="keywords" aria-describedby="basic-addon1" name="keywords_insert">
-                        </div>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">Description</span>
-                            </div>
-                            <textarea class="form-control" aria-label="With textarea"
-                                placeholder="Description"></textarea>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-success">Save changes</button>
                     </div>
                     </form>
                 </div>
             </div>
-        </div>
-        <div class="container align-items-center">
-            <div class="jumbotron align-items-center" id="results-container">
-            <p class="align-items-center center">Coded with ❤️ by Sammy Robens-Paradise</p>
+
+            <div class="container">
+
             </div>
-        </div>
-        <!--Footer-->
-        <div class="container">
-            <p id="copyright">Find It ©️ 2019 <code>Version 1.0.1</code></p>
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous">
-            </script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous">
-            </script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                crossorigin="anonymous">
-            </script>
-            <script src="./main.js"></script>
+            <!--Modal-->
+            <div class="modal fade" id="data-entry" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form action="insert.php" method="get">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create Entry</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <p>Create a Entry</p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">Item</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Example Name" aria-label="name"
+                                        aria-describedby="basic-addon1" name="item_name_insert">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon2">Keywords</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Key,words,like,this"
+                                        aria-label="keywords" aria-describedby="basic-addon1" name="keywords_insert">
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Description</span>
+                                    </div>
+                                    <input class="form-control" aria-label="With textarea" placeholder="Description"
+                                        name="item_description_insert">
+                                </div>
+                            </div>
+                           
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                <input type="submit" class="btn btn-success" data-dismiss="modal">
+                          
+                        </form>
+  
+                    </div>
+                </div>
+
+            </div>
+            <div class="container align-items-center">
+                <div class="jumbotron align-items-center" id="results-container">
+                    <p class="align-items-center center">Coded with ❤️ by Sammy Robens-Paradise</p>
+                    <?php
+                        if (isset($_GET['keywords_insert'])) {
+                $keywords_insert = $_GET["keywords_insert"];
+                echo "<p>". $keywords_insert ."</p>";
+                        }
+                ?>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <div class="container">
+                <p id="copyright">Find It ©️ 2019 <code>Version 1.0.1</code></p>
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous">
+                </script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous">
+                </script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous">
+                </script>
+                <script src="./main.js"></script>
 </body>
 
 </html>
